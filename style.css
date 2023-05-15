@@ -6,10 +6,13 @@ body{
     font-family: 34568iZxc sans-serif;
     background-color: rgb(245, 255, 252);
 }
-.BGIMG__link{
+.container-fluid{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-image: url(./assets/imgs/Copy-of-62M-copy-scaled.jpg);
+}
+.img-fluid{
+
 }
 /* /*
 /*///////////*Estilos Header/////////*/
@@ -22,9 +25,10 @@ header{
     padding: 0.5px;
     align-items: center;
 }
-.navbar navbar-expand-lg bg-body-tertiary{
-    background-color: salmon;
+.nav{
+
 }
+
 
 /* .logo{
     display:flex ;
@@ -122,7 +126,7 @@ button{
     (cada valor es una columna y con porcentajes siempre
     tenemos que sumar un total de 100% para no generar
     un scroll horizontal) */
-    grid-template-columns: 30% 30% 40%; 
+    grid-template-columns: 50% 50%; 
     /* Defino las filas que con "min-content" van a
     ajustarse automáticamente al tamaño de los elementos */
     grid-template-rows: min-content min-content min-content min-content min-content; 
@@ -130,9 +134,9 @@ button{
     Se puede pensar que cada grupo de comillas es una fila
     y cada valor es una columna */
     grid-template-areas: 
-        "titulo    titulo    img"
-        "parrafo   ...       img"
-        "button  ...         img"
+        "titulo   img"
+        "parrafo  img"
+        "button   img"
         
        
     
@@ -195,3 +199,70 @@ button{
     text-align: center;
     margin: 10rem auto 5rem auto;
 }
+
+
+
+///////////////////////////////////servicios////////////////////////
+
+/* ====================================================== CARDS */
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 8rem;
+}
+.card{
+    width: 10%;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====================================================== BLOGS */
+
+.blogContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(186, 223, 255);
+}
+
+.work{
+    font-size: 2rem;
+    margin: 4rem 0;
+}
+.blog, 
+.blogIzq{
+    display: flex;
+    align-items: center;
+    width: 80%;
+  
+}
+
+.blog div,
+.blogIzq div{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Ivierto la disposición */
+.blogIzq{
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+PAGINA TAROT ////////////////////////////////////////////////////////////////////////////////
+
