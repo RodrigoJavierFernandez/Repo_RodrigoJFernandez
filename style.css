@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 34568iZxc sans-serif;
+    background-color: rgb(245, 255, 252);
+}
+.BGIMG__link{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/imgs/Copy-of-62M-copy-scaled.jpg);
+}
+/* /*
+/*///////////*Estilos Header/////////*/
+
+header{
+    /* display: flex; */
+    height: 50px;
+    background-color: rgb(111, 118, 115);
+    justify-content: space-between;
+    padding: 0.5px;
+    align-items: center;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+    background-color: salmon;
+}
+
+/* .logo{
+    display:flex ;
+}
+
+.logo img{
+    height: 70px;
+}
+/* 
+.nav{
+    background-color: rgb(240, 252, 134);
+    padding: 5rem;
+} */
+/* ul{
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: Right;
+}
+a{
+    text-decoration: none;
+    color: rgb(40, 40, 51);
+}
+li{
+    background-color: rgb(208, 208, 208);
+    /* padding: .8rem; */
+    /* margin: .3rem;
+    border-radius: 10%;
+ */
+    
+} */
+ */
+ */.nav{
+    margin: 5px;
+ }
+
+
+
+ /*////////// CONTACTO //////////*/
+
+
+
+ section{
+    display: grid;
+    border-color: 2px black solid;
+    grid-template-columns: 50% 50%
+    grid-template-rows: min-content;
+    background-color: rgb(255, 255, 255);
+    grid-template-areas: "header header "
+    "img aside "
+    "img footer ";
+    grid-template-rows: "min-content"; 
+
+ }
+
+ .grid{
+    background-color: rgb(255, 255, 255);
+   
+ }
+.section h2{
+    grid-area: "header";
+}
+.gridContainer h3{
+    grid-area: "aside";
+    text-align: center;
+}
+.gridContainer .vertical{
+    grid-area: "aside";
+}
+
+button{
+    grid-area: "footer";
+}
+
+
+
+///////////*FOOTER*////////
+.footerdiv{
+    background-color: rgb(4, 4, 4);
+    height: 75px;
+    width: 100%;
+}
+
+//////////////    FAQ       /////////////////
+
+/* Atributos generales */
+
+
+.gridContainer{
+    /* Le digo al elmento que tenga formato de grilla */
+    display: grid; 
+    /* Defino las columnas usando porcentajes
+    (cada valor es una columna y con porcentajes siempre
+    tenemos que sumar un total de 100% para no generar
+    un scroll horizontal) */
+    grid-template-columns: 30% 30% 40%; 
+    /* Defino las filas que con "min-content" van a
+    ajustarse automáticamente al tamaño de los elementos */
+    grid-template-rows: min-content min-content min-content min-content min-content; 
+    /* Defino "el nombre" de cada celda o área de nuestra grilla.
+    Se puede pensar que cada grupo de comillas es una fila
+    y cada valor es una columna */
+    grid-template-areas: 
+        "titulo    titulo    img"
+        "parrafo   ...       img"
+        "button  ...         img"
+        
+       
+    
+    /* Atributos de diseño*/
+    width: 70%;
+    margin: 5% auto;
+}
+.gridContainer h2 { 
+    /* Le asigno el lugar en la grilla con el
+    nombre correspondiente */
+    grid-area: titulo; 
+
+    /* Atributos de diseño */
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin: 5% 0;
+}
+.gridContainer h3 { 
+    /* Le asigno el lugar en la grilla con el
+    nombre correspondiente */
+    grid-area: parrafo; 
+
+    /* Atributos de diseño */
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    margin: 5% 0;
+    width: 90%;
+}
+.gridContainer button { 
+    /* Le asigno el lugar en la grilla con el
+    nombre correspondiente */
+    grid-area: button; 
+
+    /* Atributos de diseño */
+    border: 0;
+    background-color: #0071E3;
+    color: white;
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 980px;
+}
+.gridContainer .vertical { 
+    /* Le asigno el lugar en la grilla con el
+    nombre correspondiente */
+    grid-area: img; 
+
+    /* Atributos de diseño */
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.gridContainer h3{
+    /* Le asigno el lugar en la grilla con el
+    nombre correspondiente */
+    grid-area: parrafo;
+
+    /* Atributos de diseño */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10rem auto 5rem auto;
+}
