@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: 34568iZxc sans-serif;
     background-color: rgb(245, 255, 252);
@@ -11,6 +12,7 @@ body{
     height: 100%; 
 }
 
+.img_body { padding: 0; }
 
 /*///////////*Estilos Header/////////*/
 
@@ -68,11 +70,12 @@ button{
 
 /*///////////////////////    FOOTER       ///////////////////*/
 .footerdiv{
-    background-color: rgb(4, 4, 4);
+    background-color: rgb(8, 7, 7);
+    color: darkgoldenrod;
     height: 35px;
     width: 100%;
-  margin: 0.6rem;
-  padding: 1rem;
+  margin: 0.2rem;
+  padding: .1rem;
  
 }
 
