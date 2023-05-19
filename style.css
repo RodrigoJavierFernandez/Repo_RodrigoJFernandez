@@ -37,13 +37,13 @@ header{
  section{
     display: grid;
     border-color: 2px black solid;
-    grid-template-columns: 50% 50%
-    grid-template-rows; min-content;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
     background-color: rgb(255, 255, 255);
-    grid-template-areas: "header header "
-    "img aside "
-    "img footer ";
-    grid-template-rows: "min-content"; 
+    grid-template-areas: 
+    "header header"
+    "img1 img2";
+
 
  }
 
@@ -51,17 +51,14 @@ header{
     background-color: rgb(255, 255, 255);
    
  }
-.section h2{
-    grid-area: "header";
-}
-.gridContainer h3{
-    grid-area: "aside";
-    text-align: center;
-}
-.gridContainer .vertical{
-    grid-area: "aside";
-}
+ section h1{ grid-area: header; }
 
+section .imgrs1 {
+    grid-area: img1;
+}
+section .imgrs2 {
+    grid-area: img2;
+}
 button{
     grid-area: "footer";
 }
@@ -94,14 +91,14 @@ button{
     grid-template-columns: 50% 50%; 
     /* Defino las filas que con "min-content" van a
     ajustarse automáticamente al tamaño de los elementos */
-    grid-template-rows: min-content min-content min-content min-content min-content; 
+    grid-template-rows: min-content min-content min-content; 
     /* Defino "el nombre" de cada celda o área de nuestra grilla.
     Se puede pensar que cada grupo de comillas es una fila
     y cada valor es una columna */
     grid-template-areas: 
         "titulo   img"
         "parrafo  img"
-        "button   img"
+        "button   img";
         
        
     
@@ -173,6 +170,10 @@ button{
 .titleContainer {
     display: flex;
     justify-content: center;
+   
+}
+.titleContainer h1{
+    text-decoration: underline rgb(16, 10, 10);
 }
 .cardContainer{
     display: flex;
