@@ -33,6 +33,8 @@ header{
  /*////////// CONTACTO //////////*/
 
 .imgrs2{
+    height: 500px;
+    width: 500px;
 }
 
  section{
@@ -297,4 +299,7 @@ img{
 .imggias{
     width: 100%;
     height: 50vh;
+}
+.guiasimg{
+    width: 400px;
 }
