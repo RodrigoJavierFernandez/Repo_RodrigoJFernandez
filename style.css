@@ -295,11 +295,16 @@ img{
 
 
 /*/////////////////////        GUIAS      ////////////////////////////////*/
-
-.imggias{
+body{
+    background-color: #fff;
+}
+.imgguias{
     width: 100%;
     height: 50vh;
+    text-align: right;
 }
 .guiasimg{
     width: 400px;
+ 
+
 }
